@@ -17,9 +17,48 @@
         android:windowSoftInputMode="adjustResize"
         android:exported="true">
         <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <!-- <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" /> -->
         </intent-filter>
       </activity>
+      <!-- Default Icon -->
+      <activity-alias
+            android:name="${applicationId}.MainActivityDefault"
+            android:enabled="true"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_light"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+      <!-- Black Icon -->
+      <activity-alias
+            android:name="${applicationId}.MainActivityBlack"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_dark"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+      <!-- Premium Icon -->
+      <activity-alias
+            android:name="${applicationId}.MainActivityPremium"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_lf"
+            android:targetActivity=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
     </application>
 </manifest>

@@ -48,5 +48,54 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<!-- Cuustom App Icons  -->
+	<key>CFBundleIcons</key>
+	<dict>
+	<key>CFBundleAlternateIcons</key>
+	<dict>
+	<key>Black</key>
+	<dict>
+		<key>CFBundleIconFiles</key>
+		<array>
+		<string>AppIcon-Black</string>
+		</array>
+		<key>UIPrerenderedIcon</key>
+		<false/>
+	</dict>
+	<key>Premium</key>
+	<dict>
+		<key>UIPrerenderedIcon</key>
+		<false/>
+		<key>CFBundleIconFiles</key>
+		<array>
+		<string>AppIcon-Premium</string>
+		</array>
+	</dict>
+	</dict>
+	<key>CFBundlePrimaryIcon</key>
+	<dict>
+	<key>CFBundleIconName</key>
+	<string>AppIcon</string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>AppIcon</string>
+	</array>
+	<key>UIPrerenderedIcon</key>
+	<false/>
+	</dict>
+	<key>UINewsstandIcon</key>
+	<dict>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>AppIcon</string>
+	</array>
+	<key>UINewsstandBindingType</key>
+	<string>UINewsstandBindingTypeMagazine</string>
+	<key>UINewsstandBindingEdge</key>
+	<string>UINewsstandBindingEdgeLeft</string>
+	</dict>
+	</dict>
+	<!-- Cuustom App Icons END  -->
+
 </dict>
 </plist>

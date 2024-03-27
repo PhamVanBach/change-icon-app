@@ -1,6 +1,7 @@
 package com.change_app_icon
 
 import android.app.Application
+import com.change_app_icon.JSBridge.RNChangeIconPackage
 import com.facebook.react.PackageList
 import com.facebook.react.ReactApplication
 import com.facebook.react.ReactHost
@@ -20,6 +21,7 @@ class MainApplication : Application(), ReactApplication {
             PackageList(this).packages.apply {
               // Packages that cannot be autolinked yet can be added manually here, for example:
               // add(MyReactNativePackage())
+              add(RNChangeIconPackage(getPackageName()));
             }
 
         override fun getJSMainModuleName(): String = "index"
